@@ -1,8 +1,8 @@
 
 
-import 'package:blackhole/CustomWidgets/like_button.dart';
-import 'package:blackhole/CustomWidgets/on_hover.dart';
-import 'package:blackhole/CustomWidgets/song_tile_trailing_menu.dart';
+import 'package:tune_360/CustomWidgets/like_button.dart';
+import 'package:tune_360/CustomWidgets/on_hover.dart';
+import 'package:tune_360/CustomWidgets/song_tile_trailing_menu.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 

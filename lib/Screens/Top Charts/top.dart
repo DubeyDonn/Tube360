@@ -1,13 +1,13 @@
 
 
 import 'package:app_links/app_links.dart';
-import 'package:blackhole/APIs/spotify_api.dart';
-import 'package:blackhole/CustomWidgets/custom_physics.dart';
-import 'package:blackhole/CustomWidgets/empty_screen.dart';
-import 'package:blackhole/Helpers/countrycodes.dart';
-// import 'package:blackhole/Helpers/countrycodes.dart';
-import 'package:blackhole/Screens/Search/search.dart';
-import 'package:blackhole/Screens/Settings/setting.dart';
+import 'package:tune_360/APIs/spotify_api.dart';
+import 'package:tune_360/CustomWidgets/custom_physics.dart';
+import 'package:tune_360/CustomWidgets/empty_screen.dart';
+import 'package:tune_360/Helpers/countrycodes.dart';
+// import 'package:tune_360/Helpers/countrycodes.dart';
+import 'package:tune_360/Screens/Search/search.dart';
+import 'package:tune_360/Screens/Settings/setting.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';

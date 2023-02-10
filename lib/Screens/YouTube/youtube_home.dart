@@ -1,16 +1,14 @@
-
-
-import 'package:blackhole/CustomWidgets/on_hover.dart';
-import 'package:blackhole/CustomWidgets/search_bar.dart';
-import 'package:blackhole/Screens/YouTube/youtube_playlist.dart';
-import 'package:blackhole/Screens/YouTube/youtube_search.dart';
-import 'package:blackhole/Services/youtube_services.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:hive/hive.dart';
+import 'package:tune_360/CustomWidgets/on_hover.dart';
+import 'package:tune_360/CustomWidgets/search_bar.dart';
+import 'package:tune_360/Screens/YouTube/youtube_playlist.dart';
+import 'package:tune_360/Screens/YouTube/youtube_search.dart';
+import 'package:tune_360/Services/youtube_services.dart';
 
 bool status = false;
 List searchedList = Hive.box('cache').get('ytHome', defaultValue: []) as List;
@@ -30,6 +28,7 @@ class _YouTubeState extends State<YouTube>
   // bool showHistory =
   // Hive.box('settings').get('showHistory', defaultValue: true) as bool;
   final TextEditingController _controller = TextEditingController();
+
   // int _currentPage = 0;
   // final PageController _pageController = PageController(
   // viewportFraction:

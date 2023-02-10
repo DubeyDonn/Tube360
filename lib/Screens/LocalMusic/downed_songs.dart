@@ -2,17 +2,17 @@
 
 import 'dart:developer';
 
-import 'package:blackhole/CustomWidgets/add_playlist.dart';
-import 'package:blackhole/CustomWidgets/custom_physics.dart';
-import 'package:blackhole/CustomWidgets/data_search.dart';
-import 'package:blackhole/CustomWidgets/empty_screen.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/playlist_head.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/Helpers/audio_query.dart';
-import 'package:blackhole/Screens/LocalMusic/localplaylists.dart';
-import 'package:blackhole/Services/player_service.dart';
+import 'package:tune_360/CustomWidgets/add_playlist.dart';
+import 'package:tune_360/CustomWidgets/custom_physics.dart';
+import 'package:tune_360/CustomWidgets/data_search.dart';
+import 'package:tune_360/CustomWidgets/empty_screen.dart';
+import 'package:tune_360/CustomWidgets/gradient_containers.dart';
+import 'package:tune_360/CustomWidgets/miniplayer.dart';
+import 'package:tune_360/CustomWidgets/playlist_head.dart';
+import 'package:tune_360/CustomWidgets/snackbar.dart';
+import 'package:tune_360/Helpers/audio_query.dart';
+import 'package:tune_360/Screens/LocalMusic/localplaylists.dart';
+import 'package:tune_360/Services/player_service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';

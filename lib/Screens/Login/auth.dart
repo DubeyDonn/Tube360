@@ -1,9 +1,7 @@
-
-
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/Helpers/backup_restore.dart';
-import 'package:blackhole/Helpers/config.dart';
-import 'package:blackhole/Helpers/supabase.dart';
+import 'package:tune_360/CustomWidgets/gradient_containers.dart';
+import 'package:tune_360/Helpers/backup_restore.dart';
+import 'package:tune_360/Helpers/config.dart';
+import 'package:tune_360/Helpers/supabase.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get_it/get_it.dart';
@@ -17,6 +15,7 @@ class AuthScreen extends StatefulWidget {
 
 class _AuthScreenState extends State<AuthScreen> {
   TextEditingController controller = TextEditingController();
+  final key = GlobalKey<FormState>();
   Uuid uuid = const Uuid();
 
   @override
@@ -50,27 +49,30 @@ class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     return GradientContainer(
+      opacity: true,
       child: Scaffold(
         extendBodyBehindAppBar: true,
         body: SafeArea(
           child: Stack(
             children: [
               Positioned(
-                left: MediaQuery.of(context).size.width / 1.85,
+                left: 50,
+                right: 50,
+                top: 60,
                 child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.width,
+                  width: MediaQuery.of(context).size.width / 2,
+                  height: MediaQuery.of(context).size.width / 2,
                   child: const Image(
                     image: AssetImage(
-                      'assets/icon-white-trans.png',
+                      'assets/logo.png',
                     ),
                   ),
                 ),
               ),
-              const GradientContainer(
-                child: null,
-                opacity: true,
-              ),
+              // const GradientContainer(
+              //   child: null,
+              //   opacity: true,
+              // ),
               Column(
                 children: [
                   Row(
@@ -108,41 +110,19 @@ class _AuthScreenState extends State<AuthScreen> {
                         padding: const EdgeInsets.only(left: 30.0, right: 30.0),
                         physics: const BouncingScrollPhysics(),
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                RichText(
-                                  text: TextSpan(
-                                    text: 'Music\n',
-                                    style: TextStyle(
-                                      height: 0.97,
-                                      fontSize: 80,
-                                      fontWeight: FontWeight.bold,
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .secondary,
-                                    ),
-                                    children: <TextSpan>[
-                                      const TextSpan(
-                                        text: '360',
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 80,
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                      TextSpan(
-                                        text: '',
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 80,
-                                          color: Theme.of(context)
-                                              .colorScheme
-                                              .secondary,
-                                        ),
-                                      ),
-                                    ],
+                                Text(
+                                  'Tune 360',
+                                  style: TextStyle(
+                                    height: 0.10,
+                                    fontSize: 80,
+                                    fontWeight: FontWeight.bold,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                               ],
@@ -152,76 +132,82 @@ class _AuthScreenState extends State<AuthScreen> {
                             ),
                             Column(
                               children: [
-                                Container(
-                                  padding: const EdgeInsets.only(
-                                    top: 5,
-                                    bottom: 5,
-                                    left: 10,
-                                    right: 10,
-                                  ),
-                                  height: 57.0,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    color: Colors.grey[900],
-                                    boxShadow: const [
-                                      BoxShadow(
-                                        color: Colors.black26,
-                                        blurRadius: 5.0,
-                                        offset: Offset(0.0, 3.0),
-                                      )
-                                    ],
-                                  ),
-                                  child: TextField(
-                                    controller: controller,
-                                    textAlignVertical: TextAlignVertical.center,
-                                    textCapitalization:
-                                        TextCapitalization.sentences,
-                                    keyboardType: TextInputType.name,
-                                    decoration: InputDecoration(
-                                      focusedBorder: const UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                          width: 1.5,
-                                          color: Colors.transparent,
+                                Form(
+                                  key: key,
+                                  child: Container(
+                                    padding: const EdgeInsets.only(
+                                      top: 5,
+                                      bottom: 5,
+                                      left: 10,
+                                      right: 10,
+                                    ),
+                                    height: 57.0,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10.0),
+                                      color: Colors.grey[900],
+                                      boxShadow: const [
+                                        BoxShadow(
+                                          color: Colors.black26,
+                                          blurRadius: 5.0,
+                                          offset: Offset(0.0, 3.0),
+                                        )
+                                      ],
+                                    ),
+                                    child: TextFormField(
+                                      controller: controller,
+                                      textAlignVertical:
+                                          TextAlignVertical.center,
+                                      textCapitalization:
+                                          TextCapitalization.sentences,
+                                      keyboardType: TextInputType.name,
+                                      style: TextStyle(color: Colors.white),
+                                      decoration: InputDecoration(
+                                        focusedBorder:
+                                            const UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                            width: 1.5,
+                                            color: Colors.transparent,
+                                          ),
+                                        ),
+                                        prefixIcon: Icon(
+                                          Icons.person,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .secondary,
+                                        ),
+                                        border: InputBorder.none,
+                                        hintText: AppLocalizations.of(context)!
+                                            .enterName,
+                                        hintStyle: const TextStyle(
+                                          color: Colors.white,
                                         ),
                                       ),
-                                      prefixIcon: Icon(
-                                        Icons.person,
-                                        color: Theme.of(context)
-                                            .colorScheme
-                                            .secondary,
-                                      ),
-                                      border: InputBorder.none,
-                                      hintText: AppLocalizations.of(context)!
-                                          .enterName,
-                                      hintStyle: const TextStyle(
-                                        color: Colors.white60,
-                                      ),
+                                      validator: (data) {
+                                        if (data == null ||
+                                            data == '' ||
+                                            data.isEmpty) {
+                                          return 'Please enter your name';
+                                        } else if (data.length < 3) {
+                                          return 'Name atleast 3 character';
+                                        }
+                                        return null;
+                                      },
                                     ),
-                                    onSubmitted: (String value) async {
-                                      if (value.trim() == '') {
-                                        await _addUserData(
-                                          AppLocalizations.of(context)!.guest,
-                                        );
-                                      } else {
-                                        await _addUserData(value.trim());
-                                      }
-                                      Navigator.popAndPushNamed(
-                                        context,
-                                        '/pref',
-                                      );
-                                    },
                                   ),
                                 ),
                                 GestureDetector(
                                   onTap: () async {
-                                    if (controller.text.trim() == '') {
-                                      await _addUserData('Guest');
-                                    } else {
+                                    if (key.currentState!.validate()) {
                                       await _addUserData(
                                         controller.text.trim(),
                                       );
+                                      Navigator.popAndPushNamed(
+                                          context, '/pref');
+                                    } else {
+                                      // await _addUserData('Guest');
+                                      // Navigator.popAndPushNamed(
+                                      //     context, '/pref');
                                     }
-                                    Navigator.popAndPushNamed(context, '/pref');
                                   },
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(

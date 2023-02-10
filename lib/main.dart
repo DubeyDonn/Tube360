@@ -2,23 +2,23 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:audio_service/audio_service.dart';
-import 'package:blackhole/Helpers/config.dart';
-import 'package:blackhole/Helpers/countrycodes.dart';
-import 'package:blackhole/Helpers/handle_native.dart';
-import 'package:blackhole/Helpers/logging.dart';
-import 'package:blackhole/Helpers/route_handler.dart';
-import 'package:blackhole/Screens/About/about.dart';
-import 'package:blackhole/Screens/Home/home.dart';
-import 'package:blackhole/Screens/Library/downloads.dart';
-import 'package:blackhole/Screens/Library/nowplaying.dart';
-import 'package:blackhole/Screens/Library/playlists.dart';
-import 'package:blackhole/Screens/Library/recent.dart';
-import 'package:blackhole/Screens/Login/auth.dart';
-import 'package:blackhole/Screens/Login/pref.dart';
-import 'package:blackhole/Screens/Player/audioplayer.dart';
-import 'package:blackhole/Screens/Settings/setting.dart';
-import 'package:blackhole/Services/audio_service.dart';
-import 'package:blackhole/theme/app_theme.dart';
+import 'package:tune_360/Helpers/config.dart';
+import 'package:tune_360/Helpers/countrycodes.dart';
+import 'package:tune_360/Helpers/handle_native.dart';
+import 'package:tune_360/Helpers/logging.dart';
+import 'package:tune_360/Helpers/route_handler.dart';
+import 'package:tune_360/Screens/About/about.dart';
+import 'package:tune_360/Screens/Home/home.dart';
+import 'package:tune_360/Screens/Library/downloads.dart';
+import 'package:tune_360/Screens/Library/nowplaying.dart';
+import 'package:tune_360/Screens/Library/playlists.dart';
+import 'package:tune_360/Screens/Library/recent.dart';
+import 'package:tune_360/Screens/Login/auth.dart';
+import 'package:tune_360/Screens/Login/pref.dart';
+import 'package:tune_360/Screens/Player/audioplayer.dart';
+import 'package:tune_360/Screens/Settings/setting.dart';
+import 'package:tune_360/Services/audio_service.dart';
+import 'package:tune_360/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -34,7 +34,7 @@ Future<void> main() async {
   Paint.enableDithering = true;
 
   if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-    await Hive.initFlutter('BlackHole');
+    await Hive.initFlutter('Tune 360');
   } else {
     await Hive.initFlutter();
   }
@@ -73,8 +73,8 @@ Future<void> startService() async {
   final AudioPlayerHandler audioHandler = await AudioService.init(
     builder: () => AudioPlayerHandlerImpl(),
     config: AudioServiceConfig(
-      androidNotificationChannelId: 'com.shadow.blackhole.channel.audio',
-      androidNotificationChannelName: 'BlackHole',
+      androidNotificationChannelId: 'com.limitless.tune360.channel.audio',
+      androidNotificationChannelName: 'Tune 360',
       androidNotificationOngoing: true,
       androidNotificationIcon: 'drawable/ic_stat_music_note',
       androidShowNotificationBadge: true,
@@ -95,8 +95,8 @@ Future<void> openHiveBox(String boxName, {bool limit = false}) async {
     File dbFile = File('$dirPath/$boxName.hive');
     File lockFile = File('$dirPath/$boxName.lock');
     if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-      dbFile = File('$dirPath/BlackHole/$boxName.hive');
-      lockFile = File('$dirPath/BlackHole/$boxName.lock');
+      dbFile = File('$dirPath/Tune 360/$boxName.hive');
+      lockFile = File('$dirPath/Tune 360/$boxName.lock');
     }
     await dbFile.delete();
     await lockFile.delete();
@@ -198,8 +198,8 @@ class _MyAppState extends State<MyApp> {
     ]);
 
     return MaterialApp(
-      title: 'BlackHole',
-      restorationScopeId: 'blackhole',
+      title: 'Tune 360',
+      restorationScopeId: 'tune_360',
       debugShowCheckedModeBanner: false,
       themeMode: AppTheme.themeMode,
       theme: AppTheme.lightTheme(

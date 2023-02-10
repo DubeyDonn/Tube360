@@ -33,7 +33,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.shadow.blackhole"
+        applicationId "com.limitless.tune360"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()

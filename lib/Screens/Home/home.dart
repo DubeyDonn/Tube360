@@ -1,24 +1,23 @@
-
-
 import 'dart:io';
 import 'dart:math';
 
-import 'package:blackhole/CustomWidgets/custom_physics.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/textinput_dialog.dart';
-import 'package:blackhole/Helpers/backup_restore.dart';
-import 'package:blackhole/Helpers/downloads_checker.dart';
-import 'package:blackhole/Helpers/supabase.dart';
-import 'package:blackhole/Screens/Home/saavn.dart';
-import 'package:blackhole/Screens/Library/library.dart';
-import 'package:blackhole/Screens/LocalMusic/downed_songs.dart';
-import 'package:blackhole/Screens/Search/search.dart';
-import 'package:blackhole/Screens/Settings/setting.dart';
-import 'package:blackhole/Screens/Top Charts/top.dart';
-import 'package:blackhole/Screens/YouTube/youtube_home.dart';
-import 'package:blackhole/Services/ext_storage_provider.dart';
+import 'package:tune_360/CustomWidgets/custom_physics.dart';
+import 'package:tune_360/CustomWidgets/gradient_containers.dart';
+import 'package:tune_360/CustomWidgets/miniplayer.dart';
+import 'package:tune_360/CustomWidgets/snackbar.dart';
+import 'package:tune_360/CustomWidgets/textinput_dialog.dart';
+import 'package:tune_360/Helpers/backup_restore.dart';
+import 'package:tune_360/Helpers/downloads_checker.dart';
+import 'package:tune_360/Helpers/supabase.dart';
+import 'package:tune_360/Screens/Home/saavn.dart';
+import 'package:tune_360/Screens/Library/library.dart';
+import 'package:tune_360/Screens/LocalMusic/downed_songs.dart';
+import 'package:tune_360/Screens/Search/search.dart';
+import 'package:tune_360/Screens/Settings/setting.dart';
+import 'package:tune_360/Screens/Top Charts/top.dart';
+import 'package:tune_360/Screens/YouTube/youtube_home.dart';
+import 'package:tune_360/Services/ext_storage_provider.dart';
+
 // import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -223,7 +222,7 @@ class _HomePageState extends State<HomePage> {
           ) as String;
           if (autoBackPath == '') {
             ExtStorageProvider.getExtStorage(
-              dirName: 'BlackHole/Backups',
+              dirName: 'Tune 360/Backups',
             ).then((value) {
               Hive.box('settings').put('autoBackPath', value);
               createBackup(
@@ -231,7 +230,7 @@ class _HomePageState extends State<HomePage> {
                 checked,
                 boxNames,
                 path: value,
-                fileName: 'BlackHole_AutoBackup',
+                fileName: 'Tune 360_AutoBackup',
                 showDialog: false,
               );
             });
@@ -241,7 +240,7 @@ class _HomePageState extends State<HomePage> {
               checked,
               boxNames,
               path: autoBackPath,
-              fileName: 'BlackHole_AutoBackup',
+              fileName: 'Tune 360_AutoBackup',
               showDialog: false,
             );
           }
@@ -307,8 +306,9 @@ class _HomePageState extends State<HomePage> {
                           TextSpan(
                             text: appVersion == null ? '' : '\nv$appVersion',
                             style: const TextStyle(
-                              fontSize: 7.0,
-                            ),
+                                fontSize: 7.0,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
                           ),
                         ],
                       ),
@@ -415,8 +415,8 @@ class _HomePageState extends State<HomePage> {
                         contentPadding:
                             const EdgeInsets.symmetric(horizontal: 20.0),
                         leading: Icon(
-                          Icons
-                              .settings_rounded, // miscellaneous_services_rounded,
+                          Icons.settings_rounded,
+                          // miscellaneous_services_rounded,
                           color: Theme.of(context).iconTheme.color,
                         ),
                         onTap: () {
@@ -840,11 +840,11 @@ class _HomePageState extends State<HomePage> {
                                   ),
                               ],
                             ),
-                            TopCharts(
-                              pageController: _pageController,
-                            ),
-                            const YouTube(),
                             const LibraryPage(),
+                            const YouTube(),
+                            // TopCharts(
+                            //   pageController: _pageController,
+                            // ),
                           ],
                         ),
                       ),
@@ -878,23 +878,23 @@ class _HomePageState extends State<HomePage> {
                             selectedColor:
                                 Theme.of(context).colorScheme.secondary,
                           ),
+                          // SalomonBottomBarItem(
+                          //   icon: const Icon(Icons.trending_up_rounded),
+                          //   title: Text(
+                          //     AppLocalizations.of(context)!.topCharts,
+                          //   ),
+                          //   selectedColor:
+                          //       Theme.of(context).colorScheme.secondary,
+                          // ),
                           SalomonBottomBarItem(
-                            icon: const Icon(Icons.trending_up_rounded),
-                            title: Text(
-                              AppLocalizations.of(context)!.topCharts,
-                            ),
+                            icon: const Icon(Icons.my_library_music_rounded),
+                            title: Text(AppLocalizations.of(context)!.library),
                             selectedColor:
                                 Theme.of(context).colorScheme.secondary,
                           ),
                           SalomonBottomBarItem(
                             icon: const Icon(MdiIcons.youtube),
                             title: Text(AppLocalizations.of(context)!.youTube),
-                            selectedColor:
-                                Theme.of(context).colorScheme.secondary,
-                          ),
-                          SalomonBottomBarItem(
-                            icon: const Icon(Icons.my_library_music_rounded),
-                            title: Text(AppLocalizations.of(context)!.library),
                             selectedColor:
                                 Theme.of(context).colorScheme.secondary,
                           ),

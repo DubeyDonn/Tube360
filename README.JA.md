@@ -1,34 +1,34 @@
 ![Repo Banner](https://user-images.githubusercontent.com/87353286/144381080-faf8e557-7909-43a1-a8e2-208936e5a8f8.png)
 
-# BlackHole
+# Tune 360
 
 オープンソースの音楽プレイヤーアプリです！
 
-[![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/Sangwan5688/BlackHole) ![Downloads](https://img.shields.io/github/downloads/Sangwan5688/BlackHole/total)
-[![Build](https://github.com/Sangwan5688/BlackHole/actions/workflows/flutter.yml/badge.svg)](https://github.com/Sangwan5688/BlackHole/actions/workflows/flutter.yml)
-[![Translation-Status](https://hosted.weblate.org/widgets/blackhole/-/translations/svg-badge.svg)](https://hosted.weblate.org/engage/blackhole/)
+[![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/Sangwan5688/Tune 360) ![Downloads](https://img.shields.io/github/downloads/Sangwan5688/Tune 360/total)
+[![Build](https://github.com/Sangwan5688/Tune 360/actions/workflows/flutter.yml/badge.svg)](https://github.com/Sangwan5688/Tune 360/actions/workflows/flutter.yml)
+[![Translation-Status](https://hosted.weblate.org/widgets/tune_360/-/translations/svg-badge.svg)](https://hosted.weblate.org/engage/tune_360/)
 
 ### リポジトリに:star:をつけるのを忘れずに
 
-[![GitHub stars](https://img.shields.io/github/stars/Sangwan5688/BlackHole.svg?style=social&label=Star)](https://github.com//Sangwan5688/BlackHole) ![GitHub forks](https://img.shields.io/github/forks/Sangwan5688/BlackHole.svg?style=social&label=Forks) ![GitHub followers](https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow)
+[![GitHub stars](https://img.shields.io/github/stars/Sangwan5688/Tune 360.svg?style=social&label=Star)](https://github.com//Sangwan5688/Tune 360) ![GitHub forks](https://img.shields.io/github/forks/Sangwan5688/Tune 360.svg?style=social&label=Forks) ![GitHub followers](https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow)
 
 ## ダウンロード
 
 [<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
      alt="Get it on IzzyDroid"
-     height="100">](https://android.izzysoft.de/repo/apk/com.shadow.blackhole)
+     height="100">](https://android.izzysoft.de/repo/apk/com.limitless.tune360)
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-     alt="Get it on F-Droid"
-     height="100">](https://f-droid.org/packages/com.shadow.blackhole/)
+     alt="Get it on Playstore"
+     height="100">](https://f-droid.org/packages/com.limitless.tune360/)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"
      alt="Download from GitHub"
-     height="60">](https://github.com/Sangwan5688/BlackHole/releases)
+     height="60">](https://github.com/Sangwan5688/Tune 360/releases)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white"
      alt="Join Telegram Channel"
-     height="60">](https://t.me/blackhole_official)
+     height="60">](https://t.me/tune_360_official)
 
 ## 翻訳
 
@@ -39,7 +39,7 @@
 - [Portuguese :brazil:](/README.PT.md)
 - [Belarusian :belarus:](/README.BE.md)
 
-[Weblateでアプリを翻訳](https://hosted.weblate.org/projects/blackhole/translations/)
+[Weblateでアプリを翻訳](https://hosted.weblate.org/projects/tune_360/translations/)
 
 ## 特徴
 
@@ -82,14 +82,14 @@
 
 ## スクリーンショット
 
-<img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
+<img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
 
 ## ライセンス
 
 ```
-Copyright © 2021 Ankit Sangwan
+Copyright © 2021 Limitless 360
 
-BlackHole is a free software licensed under GPL v3.0
+Tune 360 is a free software licensed under GPL v3.0
 It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
@@ -111,7 +111,7 @@ how to obtain the original software, should clearly STATE ALL CHANGES made and s
 Use of this software under any "non-free" license is NOT permitted.
 ```
 
-詳しくは、[GNU 一般公衆利用許諾契約書](https://github.com/Sangwan5688/BlackHole/blob/main/LICENSE)をご覧ください。
+詳しくは、[GNU 一般公衆利用許諾契約書](https://github.com/Sangwan5688/Tune 360/blob/main/LICENSE)をご覧ください。
 
 ## ソースからのビルド
 
@@ -119,7 +119,7 @@ Use of this software under any "non-free" license is NOT permitted.
 2. masterブランチから最新のソースコードを取得します。
 
 ```
-git clone https://github.com/Sangwan5688/BlackHole.git
+git clone https://github.com/Sangwan5688/Tune 360.git
 ```
 
 3. Android StudioまたはVS Codeでアプリを実行します。もしくはコマンドラインから:
@@ -131,15 +131,15 @@ flutter run
 
 ## コントリビュート
 
-コントリビュートを歓迎します。コントリビュートする前に、[コントリビュートガイドライン](https://github.com/Sangwan5688/BlackHole/blob/main/CONTRIBUTING.md)をお読みください。
+コントリビュートを歓迎します。コントリビュートする前に、[コントリビュートガイドライン](https://github.com/Sangwan5688/Tune 360/blob/main/CONTRIBUTING.md)をお読みください。
 
 ## 何か問題がありますか？
 
-お客様が直面する可能性のある[一般的な問題](https://github.com/Sangwan5688/BlackHole/wiki/Common-Issues)をご覧ください。もしあなたの問題がそこにない場合は、お気軽にIssueをご作成ください :)
+お客様が直面する可能性のある[一般的な問題](https://github.com/Sangwan5688/Tune 360/wiki/Common-Issues)をご覧ください。もしあなたの問題がそこにない場合は、お気軽にIssueをご作成ください :)
 
 ## ベータ版をテストしたいですか？ヘルプが必要ですか？？
 
-[Telegramチャンネル](https://t.me/blackhole_official)または[Telegramグループ](https://t.me/joinchat/fHDC1AWnOhw0ZmI9)に参加すると、プロジェクトのベータ版アップデートを受け取ることができます。
+[Telegramチャンネル](https://t.me/tune_360_official)または[Telegramグループ](https://t.me/joinchat/fHDC1AWnOhw0ZmI9)に参加すると、プロジェクトのベータ版アップデートを受け取ることができます。
 
 ## 私の作品を気に入っていただけましたか？
 
@@ -147,4 +147,4 @@ flutter run
 
 ## 最新情報
 
-全てのchangelogは[wikiページ](https://github.com/Sangwan5688/BlackHole/wiki/Changelog)をご覧ください
+全てのchangelogは[wikiページ](https://github.com/Sangwan5688/Tune 360/wiki/Changelog)をご覧ください

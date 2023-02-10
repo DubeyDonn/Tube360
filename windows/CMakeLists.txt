@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(blackhole LANGUAGES CXX)
+project(tune_360 LANGUAGES CXX)
 
-set(BINARY_NAME "blackhole")
+set(BINARY_NAME "tune_360")
 
 cmake_policy(SET CMP0063 NEW)
 

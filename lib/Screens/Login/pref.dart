@@ -1,8 +1,6 @@
-
-
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/Helpers/countrycodes.dart';
+import 'package:tune_360/CustomWidgets/gradient_containers.dart';
+import 'package:tune_360/CustomWidgets/snackbar.dart';
+import 'package:tune_360/Helpers/countrycodes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:hive/hive.dart';
@@ -16,10 +14,10 @@ class PrefScreen extends StatefulWidget {
 
 class _PrefScreenState extends State<PrefScreen> {
   List<String> languages = [
-    'Hindi',
+    'Tamil',
     'English',
     'Punjabi',
-    'Tamil',
+    'Hindi',
     'Telugu',
     'Marathi',
     'Gujarati',
@@ -35,7 +33,7 @@ class _PrefScreenState extends State<PrefScreen> {
   ];
   List<bool> isSelected = [true, false];
   List preferredLanguage = Hive.box('settings')
-      .get('preferredLanguage', defaultValue: ['Hindi'])?.toList() as List;
+      .get('preferredLanguage', defaultValue: ['Tamil'])?.toList() as List;
   String region =
       Hive.box('settings').get('region', defaultValue: 'India') as String;
 
@@ -47,20 +45,18 @@ class _PrefScreenState extends State<PrefScreen> {
           child: Stack(
             children: [
               Positioned(
-                left: MediaQuery.of(context).size.width / 1.85,
+                left: 50,
+                right: 50,
+                top: 60,
                 child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.width,
+                  width: MediaQuery.of(context).size.width / 2,
+                  height: MediaQuery.of(context).size.width / 2,
                   child: const Image(
                     image: AssetImage(
-                      'assets/icon-white-trans.png',
+                      'assets/logo.png',
                     ),
                   ),
                 ),
-              ),
-              const GradientContainer(
-                child: null,
-                opacity: true,
               ),
               Column(
                 children: [
@@ -85,7 +81,7 @@ class _PrefScreenState extends State<PrefScreen> {
                       padding: const EdgeInsets.only(left: 30.0, right: 30.0),
                       child: Center(
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          // mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Expanded(
                               child: Row(
@@ -126,11 +122,10 @@ class _PrefScreenState extends State<PrefScreen> {
                                           text: AppLocalizations.of(context)!
                                               .prefReq,
                                           style: const TextStyle(
-                                            height: 1.5,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20,
-                                            color: Colors.white,
-                                          ),
+                                              height: 1.5,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 20,
+                                              color: Colors.white),
                                         ),
                                         // TextSpan(
                                         //   text: '?',
@@ -184,6 +179,7 @@ class _PrefScreenState extends State<PrefScreen> {
                                         maxLines: 2,
                                         overflow: TextOverflow.ellipsis,
                                         textAlign: TextAlign.end,
+                                        style: TextStyle(color: Colors.white),
                                       ),
                                     ),
                                   ),
@@ -368,6 +364,7 @@ class _PrefScreenState extends State<PrefScreen> {
                                       child: Text(
                                         region,
                                         textAlign: TextAlign.end,
+                                        style: TextStyle(color: Colors.white),
                                       ),
                                     ),
                                   ),

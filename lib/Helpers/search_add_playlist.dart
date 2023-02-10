@@ -2,11 +2,11 @@
 
 import 'dart:convert';
 
-import 'package:blackhole/APIs/api.dart';
-import 'package:blackhole/APIs/spotify_api.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/Helpers/playlist.dart';
-import 'package:blackhole/Services/youtube_services.dart';
+import 'package:tune_360/APIs/api.dart';
+import 'package:tune_360/APIs/spotify_api.dart';
+import 'package:tune_360/CustomWidgets/gradient_containers.dart';
+import 'package:tune_360/Helpers/playlist.dart';
+import 'package:tune_360/Services/youtube_services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:http/http.dart';

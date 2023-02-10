@@ -1,10 +1,10 @@
 
 
-import 'package:blackhole/APIs/api.dart';
-import 'package:blackhole/Helpers/audio_query.dart';
-import 'package:blackhole/Screens/Common/song_list.dart';
-import 'package:blackhole/Screens/Player/audioplayer.dart';
-import 'package:blackhole/Services/player_service.dart';
+import 'package:tune_360/APIs/api.dart';
+import 'package:tune_360/Helpers/audio_query.dart';
+import 'package:tune_360/Screens/Common/song_list.dart';
+import 'package:tune_360/Screens/Player/audioplayer.dart';
+import 'package:tune_360/Services/player_service.dart';
 import 'package:flutter/material.dart';
 import 'package:on_audio_query/on_audio_query.dart';
 

@@ -1,22 +1,21 @@
-
-
 import 'dart:io';
 
-import 'package:blackhole/CustomWidgets/copy_clipboard.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/popup.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/textinput_dialog.dart';
-import 'package:blackhole/Helpers/backup_restore.dart';
-import 'package:blackhole/Helpers/config.dart';
-import 'package:blackhole/Helpers/countrycodes.dart';
-import 'package:blackhole/Helpers/picker.dart';
-import 'package:blackhole/Helpers/supabase.dart';
-import 'package:blackhole/Screens/Home/saavn.dart' as home_screen;
-import 'package:blackhole/Screens/Settings/player_gradient.dart';
-import 'package:blackhole/Screens/Top Charts/top.dart' as top_screen;
-import 'package:blackhole/Services/ext_storage_provider.dart';
-import 'package:blackhole/main.dart';
+import 'package:tune_360/CustomWidgets/copy_clipboard.dart';
+import 'package:tune_360/CustomWidgets/gradient_containers.dart';
+import 'package:tune_360/CustomWidgets/popup.dart';
+import 'package:tune_360/CustomWidgets/snackbar.dart';
+import 'package:tune_360/CustomWidgets/textinput_dialog.dart';
+import 'package:tune_360/Helpers/backup_restore.dart';
+import 'package:tune_360/Helpers/config.dart';
+import 'package:tune_360/Helpers/countrycodes.dart';
+import 'package:tune_360/Helpers/picker.dart';
+import 'package:tune_360/Helpers/supabase.dart';
+import 'package:tune_360/Screens/Home/saavn.dart' as home_screen;
+import 'package:tune_360/Screens/Settings/player_gradient.dart';
+import 'package:tune_360/Screens/Top Charts/top.dart' as top_screen;
+import 'package:tune_360/Services/ext_storage_provider.dart';
+import 'package:tune_360/main.dart';
+
 // import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +30,9 @@ import 'package:url_launcher/url_launcher.dart';
 
 class SettingPage extends StatefulWidget {
   final Function? callback;
+
   const SettingPage({this.callback});
+
   @override
   _SettingPageState createState() => _SettingPageState();
 }
@@ -44,7 +45,7 @@ class _SettingPageState extends State<SettingPage> {
       .get('downloadPath', defaultValue: '/storage/emulated/0/Music') as String;
   String autoBackPath = Hive.box('settings').get(
     'autoBackPath',
-    defaultValue: '/storage/emulated/0/BlackHole/Backups',
+    defaultValue: '/storage/emulated/0/Tune 360/Backups',
   ) as String;
   final ValueNotifier<bool> includeOrExclude = ValueNotifier<bool>(
     Hive.box('settings').get('includeOrExclude', defaultValue: false) as bool,
@@ -3397,9 +3398,9 @@ class _SettingPageState extends State<SettingPage> {
                             onPressed: () async {
                               autoBackPath =
                                   await ExtStorageProvider.getExtStorage(
-                                        dirName: 'BlackHole/Backups',
+                                        dirName: 'Tune 360/Backups',
                                       ) ??
-                                      '/storage/emulated/0/BlackHole/Backups';
+                                      '/storage/emulated/0/Tune 360/Backups';
                               Hive.box('settings')
                                   .put('autoBackPath', autoBackPath);
                               setState(
@@ -3597,7 +3598,7 @@ class _SettingPageState extends State<SettingPage> {
                             Share.share(
                               '${AppLocalizations.of(
                                 context,
-                              )!.shareAppText}: https://github.com/Sangwan5688/BlackHole',
+                              )!.shareAppText}: https://github.com/SukumarRaja/stream_music_player',
                             );
                           },
                           dense: true,
@@ -3617,12 +3618,12 @@ class _SettingPageState extends State<SettingPage> {
                           ),
                           dense: true,
                           onTap: () {
-                            launchUrl(
-                              Uri.parse(
-                                'https://www.buymeacoffee.com/ankitsangwan',
-                              ),
-                              mode: LaunchMode.externalApplication,
-                            );
+                            // launchUrl(
+                            //   Uri.parse(
+                            //     'https://www.buymeacoffee.com/ankitsangwan',
+                            //   ),
+                            //   mode: LaunchMode.externalApplication,
+                            // );
                           },
                         ),
                         ListTile(
@@ -3642,7 +3643,7 @@ class _SettingPageState extends State<SettingPage> {
                           isThreeLine: true,
                           onTap: () {
                             const String upiUrl =
-                                'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=BlackHole';
+                                'upi://pay?pa=sukucse717-1@okicici';
                             launchUrl(
                               Uri.parse(upiUrl),
                               mode: LaunchMode.externalApplication,
@@ -3651,7 +3652,7 @@ class _SettingPageState extends State<SettingPage> {
                           onLongPress: () {
                             copyToClipboard(
                               context: context,
-                              text: 'ankit.sangwan.5688@oksbi',
+                              text: 'sukucse717-1@okicici',
                               displayText: AppLocalizations.of(
                                 context,
                               )!
@@ -3668,7 +3669,7 @@ class _SettingPageState extends State<SettingPage> {
                             onPressed: () {
                               copyToClipboard(
                                 context: context,
-                                text: 'ankit.sangwan.5688@oksbi',
+                                text: 'sukucse717-1@okicici',
                                 displayText: AppLocalizations.of(
                                   context,
                                 )!
@@ -3724,14 +3725,14 @@ class _SettingPageState extends State<SettingPage> {
                                               )!
                                                   .gmail,
                                               onPressed: () {
-                                                Navigator.pop(context);
-                                                launchUrl(
-                                                  Uri.parse(
-                                                    'https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dblackholeyoucantescape%40gmail.com%26subject%3DRegarding%2520Mobile%2520App',
-                                                  ),
-                                                  mode: LaunchMode
-                                                      .externalApplication,
-                                                );
+                                                // Navigator.pop(context);
+                                                // launchUrl(
+                                                //   Uri.parse(
+                                                //     'https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dtune_360youcantescape%40gmail.com%26subject%3DRegarding%2520Mobile%2520App',
+                                                //   ),
+                                                //   mode: LaunchMode
+                                                //       .externalApplication,
+                                                // );
                                               },
                                             ),
                                             Text(
@@ -3755,14 +3756,14 @@ class _SettingPageState extends State<SettingPage> {
                                               )!
                                                   .tg,
                                               onPressed: () {
-                                                Navigator.pop(context);
-                                                launchUrl(
-                                                  Uri.parse(
-                                                    'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
-                                                  ),
-                                                  mode: LaunchMode
-                                                      .externalApplication,
-                                                );
+                                                // Navigator.pop(context);
+                                                // launchUrl(
+                                                //   Uri.parse(
+                                                //     'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
+                                                //   ),
+                                                //   mode: LaunchMode
+                                                //       .externalApplication,
+                                                // );
                                               },
                                             ),
                                             Text(
@@ -3786,14 +3787,14 @@ class _SettingPageState extends State<SettingPage> {
                                               )!
                                                   .insta,
                                               onPressed: () {
-                                                Navigator.pop(context);
-                                                launchUrl(
-                                                  Uri.parse(
-                                                    'https://instagram.com/sangwan5688',
-                                                  ),
-                                                  mode: LaunchMode
-                                                      .externalApplication,
-                                                );
+                                                // Navigator.pop(context);
+                                                // launchUrl(
+                                                //   Uri.parse(
+                                                //     'https://instagram.com/sangwan5688',
+                                                //   ),
+                                                //   mode: LaunchMode
+                                                //       .externalApplication,
+                                                // );
                                               },
                                             ),
                                             Text(
@@ -3849,14 +3850,14 @@ class _SettingPageState extends State<SettingPage> {
                                               )!
                                                   .tgGp,
                                               onPressed: () {
-                                                Navigator.pop(context);
-                                                launchUrl(
-                                                  Uri.parse(
-                                                    'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
-                                                  ),
-                                                  mode: LaunchMode
-                                                      .externalApplication,
-                                                );
+                                                // Navigator.pop(context);
+                                                // launchUrl(
+                                                //   Uri.parse(
+                                                //     'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
+                                                //   ),
+                                                //   mode: LaunchMode
+                                                //       .externalApplication,
+                                                // );
                                               },
                                             ),
                                             Text(
@@ -3880,14 +3881,14 @@ class _SettingPageState extends State<SettingPage> {
                                               )!
                                                   .tgCh,
                                               onPressed: () {
-                                                Navigator.pop(context);
-                                                launchUrl(
-                                                  Uri.parse(
-                                                    'https://t.me/blackhole_official',
-                                                  ),
-                                                  mode: LaunchMode
-                                                      .externalApplication,
-                                                );
+                                                // Navigator.pop(context);
+                                                // launchUrl(
+                                                //   Uri.parse(
+                                                //     'https://t.me/tune_360_official',
+                                                //   ),
+                                                //   mode: LaunchMode
+                                                //       .externalApplication,
+                                                // );
                                               },
                                             ),
                                             Text(

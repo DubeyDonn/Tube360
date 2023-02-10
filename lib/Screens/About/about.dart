@@ -1,7 +1,7 @@
 
 
-import 'package:blackhole/CustomWidgets/copy_clipboard.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
+import 'package:tune_360/CustomWidgets/copy_clipboard.dart';
+import 'package:tune_360/CustomWidgets/gradient_containers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -33,23 +33,24 @@ class _AboutScreenState extends State<AboutScreen> {
     return GradientContainer(
       child: Stack(
         children: [
-          Positioned(
-            left: MediaQuery.of(context).size.width / 2,
-            top: MediaQuery.of(context).size.width / 5,
-            child: SizedBox(
-              width: MediaQuery.of(context).size.width,
-              child: const Image(
-                fit: BoxFit.fill,
-                image: AssetImage(
-                  'assets/icon-white-trans.png',
-                ),
-              ),
-            ),
-          ),
-          const GradientContainer(
-            child: null,
-            opacity: true,
-          ),
+          // Positioned(
+          //   left: 50,
+          //   right: 50,
+          //   top: MediaQuery.of(context).size.width / 7,
+          //   child: SizedBox(
+          //     width: MediaQuery.of(context).size.width,
+          //     child: const Image(
+          //       fit: BoxFit.fill,
+          //       image: AssetImage(
+          //         'assets/logo.png',
+          //       ),
+          //     ),
+          //   ),
+          // ),
+          // const GradientContainer(
+          //   child: null,
+          //   opacity: true,
+          // ),
           Scaffold(
             appBar: AppBar(
               backgroundColor: Theme.of(context).brightness == Brightness.dark
@@ -82,7 +83,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       child: const SizedBox(
                         width: 150,
                         child:
-                            Image(image: AssetImage('assets/ic_launcher.png')),
+                            Image(image: AssetImage('assets/logo.png')),
                       ),
                     ),
                     const SizedBox(height: 20),
@@ -109,7 +110,7 @@ class _AboutScreenState extends State<AboutScreen> {
                         onPressed: () {
                           launchUrl(
                             Uri.parse(
-                              'https://github.com/Sangwan5688/BlackHole',
+                              'https://github.com/SukumarRaja/stream_music_player',
                             ),
                             mode: LaunchMode.externalApplication,
                           );
@@ -126,83 +127,83 @@ class _AboutScreenState extends State<AboutScreen> {
                           ),
                         ),
                       ),
-                      Text(
-                        AppLocalizations.of(context)!.aboutLine2,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(fontSize: 16),
-                      ),
+                      // Text(
+                      //   AppLocalizations.of(context)!.aboutLine2,
+                      //   textAlign: TextAlign.center,
+                      //   style: const TextStyle(fontSize: 16),
+                      // ),
                     ],
                   ),
                 ),
-                Column(
-                  children: [
-                    TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: Colors.transparent,
-                        foregroundColor: Colors.transparent,
-                      ),
-                      onPressed: () {
-                        launchUrl(
-                          Uri.parse(
-                            'https://www.buymeacoffee.com/ankitsangwan',
-                          ),
-                          mode: LaunchMode.externalApplication,
-                        );
-                      },
-                      child: SizedBox(
-                        width: MediaQuery.of(context).size.width / 2,
-                        child: const Image(
-                          image: AssetImage('assets/black-button.png'),
-                        ),
-                      ),
-                    ),
-                    Text(
-                      AppLocalizations.of(context)!.or,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(fontSize: 12),
-                    ),
-                    TextButton(
-                      style: TextButton.styleFrom(
-                        padding: EdgeInsets.zero,
-                        backgroundColor: Colors.transparent,
-                        foregroundColor: Colors.transparent,
-                      ),
-                      onPressed: () {
-                        const String upiUrl =
-                            'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=BlackHole&mc=5732&aid=uGICAgIDn98OpSw&tr=BCR2DN6T37O6DB3Q';
-                        launchUrl(
-                          Uri.parse(upiUrl),
-                          mode: LaunchMode.externalApplication,
-                        );
-                      },
-                      onLongPress: () {
-                        copyToClipboard(
-                          context: context,
-                          text: 'ankit.sangwan.5688@oksbi',
-                          displayText: AppLocalizations.of(
-                            context,
-                          )!
-                              .upiCopied,
-                        );
-                      },
-                      child: SizedBox(
-                        width: MediaQuery.of(context).size.width / 2,
-                        child: Image(
-                          image: AssetImage(
-                            Theme.of(context).brightness == Brightness.dark
-                                ? 'assets/gpay-white.png'
-                                : 'assets/gpay-white.png',
-                          ),
-                        ),
-                      ),
-                    ),
-                    Text(
-                      AppLocalizations.of(context)!.sponsor,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(fontSize: 12),
-                    ),
-                  ],
-                ),
+                // Column(
+                //   children: [
+                //     TextButton(
+                //       style: TextButton.styleFrom(
+                //         backgroundColor: Colors.transparent,
+                //         foregroundColor: Colors.transparent,
+                //       ),
+                //       onPressed: () {
+                //         launchUrl(
+                //           Uri.parse(
+                //             'https://www.buymeacoffee.com/ankitsangwan',
+                //           ),
+                //           mode: LaunchMode.externalApplication,
+                //         );
+                //       },
+                //       child: SizedBox(
+                //         width: MediaQuery.of(context).size.width / 2,
+                //         child: const Image(
+                //           image: AssetImage('assets/black-button.png'),
+                //         ),
+                //       ),
+                //     ),
+                //     Text(
+                //       AppLocalizations.of(context)!.or,
+                //       textAlign: TextAlign.center,
+                //       style: const TextStyle(fontSize: 12),
+                //     ),
+                //     TextButton(
+                //       style: TextButton.styleFrom(
+                //         padding: EdgeInsets.zero,
+                //         backgroundColor: Colors.transparent,
+                //         foregroundColor: Colors.transparent,
+                //       ),
+                //       onPressed: () {
+                //         const String upiUrl =
+                //             'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=Tune 360&mc=5732&aid=uGICAgIDn98OpSw&tr=BCR2DN6T37O6DB3Q';
+                //         launchUrl(
+                //           Uri.parse(upiUrl),
+                //           mode: LaunchMode.externalApplication,
+                //         );
+                //       },
+                //       onLongPress: () {
+                //         copyToClipboard(
+                //           context: context,
+                //           text: 'ankit.sangwan.5688@oksbi',
+                //           displayText: AppLocalizations.of(
+                //             context,
+                //           )!
+                //               .upiCopied,
+                //         );
+                //       },
+                //       child: SizedBox(
+                //         width: MediaQuery.of(context).size.width / 2,
+                //         child: Image(
+                //           image: AssetImage(
+                //             Theme.of(context).brightness == Brightness.dark
+                //                 ? 'assets/gpay-white.png'
+                //                 : 'assets/gpay-white.png',
+                //           ),
+                //         ),
+                //       ),
+                //     ),
+                //     Text(
+                //       AppLocalizations.of(context)!.sponsor,
+                //       textAlign: TextAlign.center,
+                //       style: const TextStyle(fontSize: 12),
+                //     ),
+                //   ],
+                // ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(5, 30, 5, 20),
                   child: Center(

@@ -36,6 +36,7 @@ class _AuthScreenState extends State<AuthScreen> {
       ..join('.');
 
     final String userId = uuid.v1();
+    print("id is $userId");
     await SupaBase().createUser({
       'id': userId,
       'name': name,

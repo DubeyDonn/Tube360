@@ -1,15 +1,15 @@
-<img width="125px" src="https://github.com/Sangwan5688/Tune 360/blob/main/assets/icon-white-trans.png" align="center" />
+<img width="125px" src="https://github.com/SukumarRaja/stream_music_player/blob/main/assets/icon-white-trans.png" align="center" />
 
 # Tune 360
 
 Superbe Lecteur de Musique fait avec Flutter !
 
-[![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/Sangwan5688/Tune 360) ![Downloads](https://img.shields.io/github/downloads/Sangwan5688/Tune 360/total)
-[![Build](https://github.com/Sangwan5688/Tune 360/actions/workflows/flutter.yml/badge.svg)](https://github.com/Sangwan5688/Tune 360/actions/workflows/flutter.yml)
+[![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/SukumarRaja/stream_music_player) ![Downloads](https://img.shields.io/github/downloads/SukumarRaja/stream_music_player/total)
+[![Build](https://github.com/SukumarRaja/stream_music_player/actions/workflows/flutter.yml/badge.svg)](https://github.com/SukumarRaja/stream_music_player/actions/workflows/flutter.yml)
 
 ### N'oubliez pas de :star: le repo
 
-[![GitHub stars](https://img.shields.io/github/stars/Sangwan5688/Tune 360.svg?style=social&label=Star)](https://github.com//Sangwan5688/Tune 360) ![GitHub forks](https://img.shields.io/github/forks/Sangwan5688/Tune 360.svg?style=social&label=Forks) ![GitHub followers](https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow)
+[![GitHub stars](https://img.shields.io/github/stars/SukumarRaja/stream_music_player.svg?style=social&label=Star)](https://github.com//SukumarRaja/stream_music_player) ![GitHub forks](https://img.shields.io/github/forks/SukumarRaja/stream_music_player.svg?style=social&label=Forks) ![GitHub followers](https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow)
 
 ## Télécharger
 
@@ -23,7 +23,7 @@ Superbe Lecteur de Musique fait avec Flutter !
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"
      alt="Téléchargez le depuis GitHub"
-     height="60">](https://github.com/Sangwan5688/Tune 360/releases)
+     height="60">](https://github.com/SukumarRaja/stream_music_player/releases)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white"
      alt="Rejoignez le Canal Telegram"
@@ -79,7 +79,7 @@ et bien plus encore...
 Vérifiez-le par vous-même :)
 
 ## Captures d'Écran
-<img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
+<img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
 
 ## License
 ```
@@ -93,7 +93,7 @@ Tune 360 is distributed in the hope that it will be useful, but WITHOUT ANY WARR
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 See the GNU General Public License for more details.
 ```
-[Voir la License](https://github.com/Sangwan5688/Tune 360/blob/main/LICENSE)
+[Voir la License](https://github.com/SukumarRaja/stream_music_player/blob/main/LICENSE)
 
 ## Build depuis la Source
 
@@ -101,7 +101,7 @@ See the GNU General Public License for more details.
 2. Récupérez le code source de la branche master.
 
 ```
-git clone https://github.com/Sangwan5688/Tune 360.git
+git clone https://github.com/SukumarRaja/stream_music_player.git
 ```
 
 3. Lancez l'application avec Android Studio ou VS Code. Ou en ligne de commandes:
@@ -113,11 +113,11 @@ flutter run
 
 ## Contribuer
 
-Les contributions sont les bienvenues. Merci de lire notre [code de conduite des contributions](https://github.com/Sangwan5688/Tune 360/blob/main/CONTRIBUTING.md) avant de contribuer.
+Les contributions sont les bienvenues. Merci de lire notre [code de conduite des contributions](https://github.com/SukumarRaja/stream_music_player/blob/main/CONTRIBUTING.md) avant de contribuer.
 
 ## Vous rencontrez un problème ?
 
-Regardez les [Problèmes communs](https://github.com/Sangwan5688/Tune 360/wiki/Common-Issues) que vous rencontrez peut-être. Si votre problème n'y est pas, n'hésitez pas à ouvrir une Issue :)
+Regardez les [Problèmes communs](https://github.com/SukumarRaja/stream_music_player/wiki/Common-Issues) que vous rencontrez peut-être. Si votre problème n'y est pas, n'hésitez pas à ouvrir une Issue :)
 
 ## Vous voulez tester les Versions Bêtas ? Besoin d'Aide ??
 
@@ -129,4 +129,4 @@ Vous pouvez rejoindre notre [Canal Telegram](https://t.me/tune_360_official) ou 
 
 ## Qu'est-ce qui est nouveau ?
 
-Pour lire tous les changements, visitez la [page du wiki](https://github.com/Sangwan5688/Tune 360/wiki/Changelog)
+Pour lire tous les changements, visitez la [page du wiki](https://github.com/SukumarRaja/stream_music_player/wiki/Changelog)

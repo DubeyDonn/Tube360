@@ -4,13 +4,13 @@
 
 Музычны прайгравальнік з адкрытым зыходным кодам для ўсіх вашых патрэб!
 
-[![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/Sangwan5688/Tune 360) ![Downloads](https://img.shields.io/github/downloads/Sangwan5688/Tune 360/total)
-[![Build](https://github.com/Sangwan5688/Tune 360/actions/workflows/flutter.yml/badge.svg)](https://github.com/Sangwan5688/Tune 360/actions/workflows/flutter.yml)
+[![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/SukumarRaja/stream_music_player) ![Downloads](https://img.shields.io/github/downloads/SukumarRaja/stream_music_player/total)
+[![Build](https://github.com/SukumarRaja/stream_music_player/actions/workflows/flutter.yml/badge.svg)](https://github.com/SukumarRaja/stream_music_player/actions/workflows/flutter.yml)
 [![Translation-Status](https://hosted.weblate.org/widgets/tune_360/-/translations/svg-badge.svg)](https://hosted.weblate.org/engage/tune_360/)
 
 ### Не забудзьцеся паставіць :star: у рэпазіторыі
 
-[![GitHub stars](https://img.shields.io/github/stars/Sangwan5688/Tune 360.svg?style=social&label=Star)](https://github.com//Sangwan5688/Tune 360) ![GitHub forks](https://img.shields.io/github/forks/Sangwan5688/Tune 360.svg?style=social&label=Forks) ![GitHub followers](https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow)
+[![GitHub stars](https://img.shields.io/github/stars/SukumarRaja/stream_music_player.svg?style=social&label=Star)](https://github.com//SukumarRaja/stream_music_player) ![GitHub forks](https://img.shields.io/github/forks/SukumarRaja/stream_music_player.svg?style=social&label=Forks) ![GitHub followers](https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow)
 
 ## Спампаваць
 
@@ -24,7 +24,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"
      alt="Download from GitHub"
-     height="60">](https://github.com/Sangwan5688/Tune 360/releases)
+     height="60">](https://github.com/SukumarRaja/stream_music_player/releases)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white"
      alt="Join Telegram Channel"
@@ -81,7 +81,7 @@
 
 ## Здымкі экрана
 
-<img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/Tune 360/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
+<img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/SukumarRaja/stream_music_player/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
 
 ## Ліцэнзія
 
@@ -110,7 +110,7 @@ how to obtain the original software, should clearly STATE ALL CHANGES made and s
 Use of this software under any "non-free" license is NOT permitted.
 ```
 
-Больш падрабязную інфармацыю глядзіце ў [GNU General Public License](https://github.com/Sangwan5688/Tune 360/blob/main/LICENSE).
+Больш падрабязную інфармацыю глядзіце ў [GNU General Public License](https://github.com/SukumarRaja/stream_music_player/blob/main/LICENSE).
 
 ## Пабудова праекту з крыніцы
 
@@ -118,7 +118,7 @@ Use of this software under any "non-free" license is NOT permitted.
 2. Атрыманне апошняй версіі зыходнага кода з асноўнай галіны.
 
 ```
-git clone https://github.com/Sangwan5688/Tune 360.git
+git clone https://github.com/SukumarRaja/stream_music_player.git
 ```
 
 3. Запусціце праграму з Android Studio або VS Code. Або праз камандны радок:
@@ -130,11 +130,11 @@ flutter run
 
 ## Уклад у праект
 
-Уклад у развіццё праекта вітаецца. Калі ласка, азнаёмцеся з нашым [кіраўніцтвам па ўнясенні ўкладаў](https://github.com/Sangwan5688/Tune 360/blob/main/CONTRIBUTING.md) перш чым уносіць іх.
+Уклад у развіццё праекта вітаецца. Калі ласка, азнаёмцеся з нашым [кіраўніцтвам па ўнясенні ўкладаў](https://github.com/SukumarRaja/stream_music_player/blob/main/CONTRIBUTING.md) перш чым уносіць іх.
 
 ## Сутыкнуліся з якой-небудзь праблемай?
 
-Паглядзіце на некаторыя [агульныя праблемы](https://github.com/Sangwan5688/Tune 360/wiki/Common-Issues) з якімі вы можаце сутыкнуцца. Калі вашай праблемы там няма, не саромейцеся задаваць пытанне па дадзенай праблеме :)
+Паглядзіце на некаторыя [агульныя праблемы](https://github.com/SukumarRaja/stream_music_player/wiki/Common-Issues) з якімі вы можаце сутыкнуцца. Калі вашай праблемы там няма, не саромейцеся задаваць пытанне па дадзенай праблеме :)
 
 ## Хочаце пратэставаць бэта-версію? Патрэбна дапамога??
 
@@ -146,4 +146,4 @@ flutter run
 
 ## Што новага
 
-Каб прачытаць поўны спіс змен, наведайце [старонку вікі](https://github.com/Sangwan5688/Tune 360/wiki/Changelog)
+Каб прачытаць поўны спіс змен, наведайце [старонку вікі](https://github.com/SukumarRaja/stream_music_player/wiki/Changelog)

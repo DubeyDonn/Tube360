@@ -1,15 +1,15 @@
-<img width="125px" src="https://github.com/Sangwan5688/Tune 360/blob/main/assets/icon-white-trans.png" align="center" />
+<img width="125px" src="https://github.com/SukumarRaja/stream_music_player/blob/main/assets/icon-white-trans.png" align="center" />
 
 # Tune 360
 
 Un increible reproductor de música basado en Flutter
 
-[![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/Sangwan5688/Tune 360) ![Downloads](https://img.shields.io/github/downloads/Sangwan5688/Tune 360/total)
-[![Build](https://github.com/Sangwan5688/Tune 360/actions/workflows/flutter.yml/badge.svg)](https://github.com/Sangwan5688/Tune 360/actions/workflows/flutter.yml)
+[![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/SukumarRaja/stream_music_player) ![Downloads](https://img.shields.io/github/downloads/SukumarRaja/stream_music_player/total)
+[![Build](https://github.com/SukumarRaja/stream_music_player/actions/workflows/flutter.yml/badge.svg)](https://github.com/SukumarRaja/stream_music_player/actions/workflows/flutter.yml)
 
 ### No olvide dejar una estrella :star: en el repo.
 
-[![GitHub stars](https://img.shields.io/github/stars/Sangwan5688/Tune 360.svg?style=social&label=Star)](https://github.com//Sangwan5688/Tune 360) ![GitHub forks](https://img.shields.io/github/forks/Sangwan5688/Tune 360.svg?style=social&label=Forks) ![GitHub followers](https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow)
+[![GitHub stars](https://img.shields.io/github/stars/SukumarRaja/stream_music_player.svg?style=social&label=Star)](https://github.com//SukumarRaja/stream_music_player) ![GitHub forks](https://img.shields.io/github/forks/SukumarRaja/stream_music_player.svg?style=social&label=Forks) ![GitHub followers](https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow)
 
 ## Descargar
 
@@ -23,7 +23,7 @@ Un increible reproductor de música basado en Flutter
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"
      alt="Download from GitHub"
-     height="60">](https://github.com/Sangwan5688/Tune 360/releases)
+     height="60">](https://github.com/SukumarRaja/stream_music_player/releases)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white"
      alt="Join Telegram Channel"
@@ -69,11 +69,11 @@ Y hay más por venir...
 
 <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" loading="lazy" width="32%"> <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" loading="lazy" width="32%"> <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" loading="lazy" width="32%"> <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png" loading="lazy" width="32%"> <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png" loading="lazy" width="32%"> <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png" loading="lazy" width="32%">
 
-## [Descargar la última versión](https://github.com/Sangwan5688/Tune 360/releases)
+## [Descargar la última versión](https://github.com/SukumarRaja/stream_music_player/releases)
 
 ## Licencia
 
-Blackhole está licenciado bajo la licencia libre [GNU GPL v3.0](https://github.com/Sangwan5688/Tune 360/blob/main/LICENSE). Eso significa que puede redistribuir y/o modificar el proyecto bajo los terminos descritos en la Licencia Pública General de GNU v3.0 tal cual lo publica la Free Software Foundation.<br>
+Tune 360 está licenciado bajo la licencia libre [GNU GPL v3.0](https://github.com/SukumarRaja/stream_music_player/blob/main/LICENSE). Eso significa que puede redistribuir y/o modificar el proyecto bajo los terminos descritos en la Licencia Pública General de GNU v3.0 tal cual lo publica la Free Software Foundation.<br>
 
 Copyright © 2021 Limitless 360
 
@@ -83,7 +83,7 @@ Copyright © 2021 Limitless 360
 2. Obtenga el código más reciente de la rama "Master"
 
 ```
-git clone https://github.com/Sangwan5688/Tune 360.git
+git clone https://github.com/SukumarRaja/stream_music_player.git
 ```
 
 3. Ejecute la aplicación con Android Studio, Visual Studio o la terminal.
@@ -93,11 +93,11 @@ flutter pub get
 flutter run
 ```
 
-4. (Opcional) Puede configurar su propia base de datos para la aplicación o utilizar la predeterminada. Para configurar su propia base de datos, siga [éstas instrucciones](https://github.com/Sangwan5688/Tune 360/wiki/Set-up-your-own-Firebase-Database).
+4. (Opcional) Puede configurar su propia base de datos para la aplicación o utilizar la predeterminada. Para configurar su propia base de datos, siga [éstas instrucciones](https://github.com/SukumarRaja/stream_music_player/wiki/Set-up-your-own-Firebase-Database).
 
 ## Contribuciones
 
-Las contribuciones son bienveenidas, Por favor lea los [lineamientos de contribución](https://github.com/Sangwan5688/Tune 360/blob/main/CONTRIBUTING.md) antes de contribuir.
+Las contribuciones son bienveenidas, Por favor lea los [lineamientos de contribución](https://github.com/SukumarRaja/stream_music_player/blob/main/CONTRIBUTING.md) antes de contribuir.
 
 ## ¿Necesita ayuda?
 
@@ -109,4 +109,4 @@ Puedes unirte a nuestro [Grupo de Telegram](https://t.me/joinchat/fHDC1AWnOhw0Zm
 
 ## ¿Qué hay de nuevo?
 
-Para leer el historial de cambios completo, visite [la wiki](https://github.com/Sangwan5688/Tune 360/wiki/Changelog)
+Para leer el historial de cambios completo, visite [la wiki](https://github.com/SukumarRaja/stream_music_player/wiki/Changelog)

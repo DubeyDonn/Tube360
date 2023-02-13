@@ -44,13 +44,16 @@ class SaavnAPI {
     bool useProxy = false,
   }) async {
     Uri url;
+    print("usecv4 is $usev4");
     if (!usev4) {
+      print("kjhkhkhkjlhkjlhkjlhjkl");
       url = Uri.https(
         baseUrl,
         '$apiStr&$params'.replaceAll('&api_version=4', ''),
       );
     } else {
       url = Uri.https(baseUrl, '$apiStr&$params');
+      print("url is $url");
     }
     preferredLanguages =
         preferredLanguages.map((lang) => lang.toLowerCase()).toList();
@@ -85,6 +88,7 @@ class SaavnAPI {
     try {
       final res = await getResponse(endpoints['homeData']!);
       if (res.statusCode == 200) {
+        log('fetchHomePageData: ${res.body}');
         final Map data = json.decode(res.body) as Map;
         result = await FormatResponse.formatHomePageData(data);
       }

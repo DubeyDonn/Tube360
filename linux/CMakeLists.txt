@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
 set(BINARY_NAME "tune_360")
-set(APPLICATION_ID "com.limitless.tune360")
+set(APPLICATION_ID "limitless.tune360")
 
 cmake_policy(SET CMP0063 NEW)
 

@@ -41,7 +41,7 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
     }
 
     defaultConfig {
-        applicationId "com.limitless.tune360"
+        applicationId "limitless.tune360"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode flutterVersionCode.toInteger()

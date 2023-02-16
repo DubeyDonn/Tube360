@@ -15,10 +15,10 @@
 
 [<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
      alt="Get it on IzzyDroid"
-     height="100">](https://android.izzysoft.de/repo/apk/com.limitless.tune360)
+     height="100">](https://android.izzysoft.de/repo/apk/limitless.tune360)
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
      alt="Get it on Playstore"
-     height="100">](https://f-droid.org/packages/com.limitless.tune360/)
+     height="100">](https://f-droid.org/packages/limitless.tune360/)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"

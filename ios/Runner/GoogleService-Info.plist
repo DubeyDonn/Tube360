@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.limitless.tune360</string>
+	<string>limitless.tune360</string>
 	<key>PROJECT_ID</key>
 	<string>tune_360-6e784</string>
 	<key>STORAGE_BUCKET</key>

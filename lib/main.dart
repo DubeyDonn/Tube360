@@ -73,7 +73,7 @@ Future<void> startService() async {
   final AudioPlayerHandler audioHandler = await AudioService.init(
     builder: () => AudioPlayerHandlerImpl(),
     config: AudioServiceConfig(
-      androidNotificationChannelId: 'com.limitless.tune360.channel.audio',
+      androidNotificationChannelId: 'limitless.tune360.channel.audio',
       androidNotificationChannelName: 'Tune 360',
       androidNotificationOngoing: true,
       androidNotificationIcon: 'drawable/ic_stat_music_note',

@@ -32,7 +32,7 @@ class ExtStorageProvider {
 
           // getting main path
           final String newPath = directory!.path
-              .replaceFirst('Android/data/com.limitless.tune360/files', dirName);
+              .replaceFirst('Android/data/limitless.tune360/files', dirName);
 
           directory = Directory(newPath);
 

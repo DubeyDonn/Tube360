@@ -12,7 +12,7 @@ import 'package:logging/logging.dart';
 
 class SaavnAPI {
   List preferredLanguages = Hive.box('settings')
-      .get('preferredLanguage', defaultValue: ['Hindi']) as List;
+      .get('preferredLanguage', defaultValue: ['Tamil']) as List;
   Map<String, String> headers = {};
   String baseUrl = 'www.jiosaavn.com';
   String apiStr = '/api.php?_format=json&_marker=0&api_version=4&ctx=web6dot0';

@@ -68,6 +68,7 @@ flutter:
   assets:
     # Add assets to the application.
     - assets/
+    - assets/exclusive/
 
 msix_config:
   display_name: Tune 360

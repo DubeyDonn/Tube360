@@ -9,6 +9,7 @@ import 'package:tune_360/CustomWidgets/textinput_dialog.dart';
 import 'package:tune_360/Helpers/backup_restore.dart';
 import 'package:tune_360/Helpers/downloads_checker.dart';
 import 'package:tune_360/Helpers/supabase.dart';
+import 'package:tune_360/Screens/Exclusive/exclusive_screen.dart';
 import 'package:tune_360/Screens/Home/saavn.dart';
 import 'package:tune_360/Screens/Library/library.dart';
 import 'package:tune_360/Screens/LocalMusic/downed_songs.dart';
@@ -361,6 +362,29 @@ class _HomePageState extends State<HomePage> {
                         selected: true,
                         onTap: () {
                           Navigator.pop(context);
+                        },
+                      ),
+                      ListTile(
+                        title: Text(
+                          "Exclusive",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 16),
+                        ),
+                        contentPadding:
+                            const EdgeInsets.symmetric(horizontal: 20.0),
+                        leading: Image.asset(
+                          "assets/starlogo.png",
+                          color: Theme.of(context).iconTheme.color,
+                          height: 25,
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Exclusive(),
+                            ),
+                          );
                         },
                       ),
                       if (Platform.isAndroid)

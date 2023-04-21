@@ -22,7 +22,7 @@ import 'package:hive/hive.dart';
 
 bool fetched = false;
 List preferredLanguage = Hive.box('settings')
-    .get('preferredLanguage', defaultValue: ['Hindi']) as List;
+    .get('preferredLanguage', defaultValue: ['Tamil']) as List;
 List likedRadio =
     Hive.box('settings').get('likedRadio', defaultValue: []) as List;
 Map data = Hive.box('cache').get('homepage', defaultValue: {}) as Map;

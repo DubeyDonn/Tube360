@@ -18,6 +18,7 @@ class _GradientContainerState extends State<GradientContainer> {
   Widget build(BuildContext context) {
     // ignore: use_decorated_box
     return Container(
+
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topLeft,

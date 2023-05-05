@@ -97,44 +97,44 @@ class _AboutScreenState extends State<AboutScreen> {
                     Text('v$appVersion'),
                   ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
-                  child: Column(
-                    children: [
-                      Text(
-                        AppLocalizations.of(context)!.aboutLine1,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(fontSize: 16),
-                      ),
-                      TextButton(
-                        onPressed: () {
-                          launchUrl(
-                            Uri.parse(
-                              'https://github.com/SukumarRaja/stream_music_player',
-                            ),
-                            mode: LaunchMode.externalApplication,
-                          );
-                        },
-                        child: SizedBox(
-                          width: MediaQuery.of(context).size.width / 4,
-                          child: Image(
-                            image: Theme.of(context).brightness ==
-                                    Brightness.dark
-                                ? const AssetImage(
-                                    'assets/GitHub_Logo_White.png',
-                                  )
-                                : const AssetImage('assets/GitHub_Logo.png'),
-                          ),
-                        ),
-                      ),
-                      // Text(
-                      //   AppLocalizations.of(context)!.aboutLine2,
-                      //   textAlign: TextAlign.center,
-                      //   style: const TextStyle(fontSize: 16),
-                      // ),
-                    ],
-                  ),
-                ),
+                // Padding(
+                //   padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
+                //   child: Column(
+                //     children: [
+                //       Text(
+                //         AppLocalizations.of(context)!.aboutLine1,
+                //         textAlign: TextAlign.center,
+                //         style: const TextStyle(fontSize: 16),
+                //       ),
+                //       TextButton(
+                //         onPressed: () {
+                //           launchUrl(
+                //             Uri.parse(
+                //               'https://github.com/SukumarRaja/stream_music_player',
+                //             ),
+                //             mode: LaunchMode.externalApplication,
+                //           );
+                //         },
+                //         child: SizedBox(
+                //           width: MediaQuery.of(context).size.width / 4,
+                //           child: Image(
+                //             image: Theme.of(context).brightness ==
+                //                     Brightness.dark
+                //                 ? const AssetImage(
+                //                     'assets/GitHub_Logo_White.png',
+                //                   )
+                //                 : const AssetImage('assets/GitHub_Logo.png'),
+                //           ),
+                //         ),
+                //       ),
+                //       // Text(
+                //       //   AppLocalizations.of(context)!.aboutLine2,
+                //       //   textAlign: TextAlign.center,
+                //       //   style: const TextStyle(fontSize: 16),
+                //       // ),
+                //     ],
+                //   ),
+                // ),
                 // Column(
                 //   children: [
                 //     TextButton(

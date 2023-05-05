@@ -3603,90 +3603,90 @@ class _SettingPageState extends State<SettingPage> {
                           },
                           dense: true,
                         ),
-                        ListTile(
-                          title: Text(
-                            AppLocalizations.of(
-                              context,
-                            )!
-                                .likedWork,
-                          ),
-                          subtitle: Text(
-                            AppLocalizations.of(
-                              context,
-                            )!
-                                .buyCoffee,
-                          ),
-                          dense: true,
-                          onTap: () {
-                            // launchUrl(
-                            //   Uri.parse(
-                            //     'https://www.buymeacoffee.com/ankitsangwan',
-                            //   ),
-                            //   mode: LaunchMode.externalApplication,
-                            // );
-                          },
-                        ),
-                        ListTile(
-                          title: Text(
-                            AppLocalizations.of(
-                              context,
-                            )!
-                                .donateGpay,
-                          ),
-                          subtitle: Text(
-                            AppLocalizations.of(
-                              context,
-                            )!
-                                .donateGpaySub,
-                          ),
-                          dense: true,
-                          isThreeLine: true,
-                          onTap: () {
-                            const String upiUrl =
-                                'upi://pay?pa=sukucse717-1@okicici';
-                            launchUrl(
-                              Uri.parse(upiUrl),
-                              mode: LaunchMode.externalApplication,
-                            );
-                          },
-                          onLongPress: () {
-                            copyToClipboard(
-                              context: context,
-                              text: 'sukucse717-1@okicici',
-                              displayText: AppLocalizations.of(
-                                context,
-                              )!
-                                  .upiCopied,
-                            );
-                          },
-                          trailing: TextButton(
-                            style: TextButton.styleFrom(
-                              foregroundColor: Theme.of(context).brightness ==
-                                      Brightness.dark
-                                  ? Colors.white
-                                  : Colors.grey[700],
-                            ),
-                            onPressed: () {
-                              copyToClipboard(
-                                context: context,
-                                text: 'sukucse717-1@okicici',
-                                displayText: AppLocalizations.of(
-                                  context,
-                                )!
-                                    .upiCopied,
-                              );
-                            },
-                            child: Text(
-                              AppLocalizations.of(
-                                context,
-                              )!
-                                  .copy,
-                              style: const TextStyle(
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                        ),
+                        // ListTile(
+                        //   title: Text(
+                        //     AppLocalizations.of(
+                        //       context,
+                        //     )!
+                        //         .likedWork,
+                        //   ),
+                        //   subtitle: Text(
+                        //     AppLocalizations.of(
+                        //       context,
+                        //     )!
+                        //         .buyCoffee,
+                        //   ),
+                        //   dense: true,
+                        //   onTap: () {
+                        //     // launchUrl(
+                        //     //   Uri.parse(
+                        //     //     'https://www.buymeacoffee.com/ankitsangwan',
+                        //     //   ),
+                        //     //   mode: LaunchMode.externalApplication,
+                        //     // );
+                        //   },
+                        // ),
+                        // ListTile(
+                        //   title: Text(
+                        //     AppLocalizations.of(
+                        //       context,
+                        //     )!
+                        //         .donateGpay,
+                        //   ),
+                        //   subtitle: Text(
+                        //     AppLocalizations.of(
+                        //       context,
+                        //     )!
+                        //         .donateGpaySub,
+                        //   ),
+                        //   dense: true,
+                        //   isThreeLine: true,
+                        //   onTap: () {
+                        //     const String upiUrl =
+                        //         'upi://pay?pa=sukucse717-1@okicici';
+                        //     launchUrl(
+                        //       Uri.parse(upiUrl),
+                        //       mode: LaunchMode.externalApplication,
+                        //     );
+                        //   },
+                        //   onLongPress: () {
+                        //     copyToClipboard(
+                        //       context: context,
+                        //       text: 'sukucse717-1@okicici',
+                        //       displayText: AppLocalizations.of(
+                        //         context,
+                        //       )!
+                        //           .upiCopied,
+                        //     );
+                        //   },
+                        //   trailing: TextButton(
+                        //     style: TextButton.styleFrom(
+                        //       foregroundColor: Theme.of(context).brightness ==
+                        //               Brightness.dark
+                        //           ? Colors.white
+                        //           : Colors.grey[700],
+                        //     ),
+                        //     onPressed: () {
+                        //       copyToClipboard(
+                        //         context: context,
+                        //         text: 'sukucse717-1@okicici',
+                        //         displayText: AppLocalizations.of(
+                        //           context,
+                        //         )!
+                        //             .upiCopied,
+                        //       );
+                        //     },
+                        //     child: Text(
+                        //       AppLocalizations.of(
+                        //         context,
+                        //       )!
+                        //           .copy,
+                        //       style: const TextStyle(
+                        //         fontWeight: FontWeight.w500,
+                        //       ),
+                        //     ),
+                        //   ),
+                        // ),
                         ListTile(
                           title: Text(
                             AppLocalizations.of(
@@ -3725,21 +3725,18 @@ class _SettingPageState extends State<SettingPage> {
                                               )!
                                                   .gmail,
                                               onPressed: () {
-                                                // Navigator.pop(context);
-                                                // launchUrl(
-                                                //   Uri.parse(
-                                                //     'https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dtune_360youcantescape%40gmail.com%26subject%3DRegarding%2520Mobile%2520App',
-                                                //   ),
-                                                //   mode: LaunchMode
-                                                //       .externalApplication,
-                                                // );
+                                                Navigator.pop(context);
+                                                launchUrl(
+                                                  Uri.parse(
+                                                    'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Regarding+Mobile+App&to=info@limitless360.org',
+                                                  ),
+                                                  mode: LaunchMode
+                                                      .externalApplication,
+                                                );
                                               },
                                             ),
                                             Text(
-                                              AppLocalizations.of(
-                                                context,
-                                              )!
-                                                  .gmail,
+                                             "Mail",
                                             ),
                                           ],
                                         ),
@@ -3748,7 +3745,35 @@ class _SettingPageState extends State<SettingPage> {
                                           children: [
                                             IconButton(
                                               icon: const Icon(
-                                                MdiIcons.telegram,
+                                                MdiIcons.earth,
+                                              ),
+                                              iconSize: 40,
+                                              tooltip: AppLocalizations.of(
+                                                context,
+                                              )!
+                                                  .gmail,
+                                              onPressed: () {
+                                                Navigator.pop(context);
+                                                launchUrl(
+                                                  Uri.parse(
+                                                    'https://limitless360.org/',
+                                                  ),
+                                                  mode: LaunchMode
+                                                      .externalApplication,
+                                                );
+                                              },
+                                            ),
+                                            Text(
+                                             "Website",
+                                            ),
+                                          ],
+                                        ),
+                                        Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            IconButton(
+                                              icon: const Icon(
+                                                MdiIcons.facebook,
                                               ),
                                               iconSize: 40,
                                               tooltip: AppLocalizations.of(
@@ -3756,21 +3781,18 @@ class _SettingPageState extends State<SettingPage> {
                                               )!
                                                   .tg,
                                               onPressed: () {
-                                                // Navigator.pop(context);
-                                                // launchUrl(
-                                                //   Uri.parse(
-                                                //     'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
-                                                //   ),
-                                                //   mode: LaunchMode
-                                                //       .externalApplication,
-                                                // );
+                                                Navigator.pop(context);
+                                                launchUrl(
+                                                  Uri.parse(
+                                                    'https://www.facebook.com/limitless360.org',
+                                                  ),
+                                                  mode: LaunchMode
+                                                      .externalApplication,
+                                                );
                                               },
                                             ),
                                             Text(
-                                              AppLocalizations.of(
-                                                context,
-                                              )!
-                                                  .tg,
+                                              "Facebook",
                                             ),
                                           ],
                                         ),
@@ -3787,14 +3809,14 @@ class _SettingPageState extends State<SettingPage> {
                                               )!
                                                   .insta,
                                               onPressed: () {
-                                                // Navigator.pop(context);
-                                                // launchUrl(
-                                                //   Uri.parse(
-                                                //     'https://instagram.com/sangwan5688',
-                                                //   ),
-                                                //   mode: LaunchMode
-                                                //       .externalApplication,
-                                                // );
+                                                Navigator.pop(context);
+                                                launchUrl(
+                                                  Uri.parse(
+                                                    'https://instagram.com/limitless360_',
+                                                  ),
+                                                  mode: LaunchMode
+                                                      .externalApplication,
+                                                );
                                               },
                                             ),
                                             Text(
@@ -3813,101 +3835,101 @@ class _SettingPageState extends State<SettingPage> {
                             );
                           },
                         ),
-                        ListTile(
-                          title: Text(
-                            AppLocalizations.of(
-                              context,
-                            )!
-                                .joinTg,
-                          ),
-                          subtitle: Text(
-                            AppLocalizations.of(
-                              context,
-                            )!
-                                .joinTgSub,
-                          ),
-                          onTap: () {
-                            showModalBottomSheet(
-                              context: context,
-                              builder: (BuildContext context) {
-                                return SizedBox(
-                                  height: 100,
-                                  child: GradientContainer(
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            IconButton(
-                                              icon: const Icon(
-                                                MdiIcons.telegram,
-                                              ),
-                                              iconSize: 40,
-                                              tooltip: AppLocalizations.of(
-                                                context,
-                                              )!
-                                                  .tgGp,
-                                              onPressed: () {
-                                                // Navigator.pop(context);
-                                                // launchUrl(
-                                                //   Uri.parse(
-                                                //     'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
-                                                //   ),
-                                                //   mode: LaunchMode
-                                                //       .externalApplication,
-                                                // );
-                                              },
-                                            ),
-                                            Text(
-                                              AppLocalizations.of(
-                                                context,
-                                              )!
-                                                  .tgGp,
-                                            ),
-                                          ],
-                                        ),
-                                        Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            IconButton(
-                                              icon: const Icon(
-                                                MdiIcons.telegram,
-                                              ),
-                                              iconSize: 40,
-                                              tooltip: AppLocalizations.of(
-                                                context,
-                                              )!
-                                                  .tgCh,
-                                              onPressed: () {
-                                                // Navigator.pop(context);
-                                                // launchUrl(
-                                                //   Uri.parse(
-                                                //     'https://t.me/tune_360_official',
-                                                //   ),
-                                                //   mode: LaunchMode
-                                                //       .externalApplication,
-                                                // );
-                                              },
-                                            ),
-                                            Text(
-                                              AppLocalizations.of(
-                                                context,
-                                              )!
-                                                  .tgCh,
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                );
-                              },
-                            );
-                          },
-                          dense: true,
-                        ),
+                        // ListTile(
+                        //   title: Text(
+                        //     AppLocalizations.of(
+                        //       context,
+                        //     )!
+                        //         .joinTg,
+                        //   ),
+                        //   subtitle: Text(
+                        //     AppLocalizations.of(
+                        //       context,
+                        //     )!
+                        //         .joinTgSub,
+                        //   ),
+                        //   onTap: () {
+                        //     showModalBottomSheet(
+                        //       context: context,
+                        //       builder: (BuildContext context) {
+                        //         return SizedBox(
+                        //           height: 100,
+                        //           child: GradientContainer(
+                        //             child: Row(
+                        //               mainAxisAlignment:
+                        //                   MainAxisAlignment.spaceEvenly,
+                        //               children: [
+                        //                 Column(
+                        //                   mainAxisSize: MainAxisSize.min,
+                        //                   children: [
+                        //                     IconButton(
+                        //                       icon: const Icon(
+                        //                         MdiIcons.telegram,
+                        //                       ),
+                        //                       iconSize: 40,
+                        //                       tooltip: AppLocalizations.of(
+                        //                         context,
+                        //                       )!
+                        //                           .tgGp,
+                        //                       onPressed: () {
+                        //                         // Navigator.pop(context);
+                        //                         // launchUrl(
+                        //                         //   Uri.parse(
+                        //                         //     'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
+                        //                         //   ),
+                        //                         //   mode: LaunchMode
+                        //                         //       .externalApplication,
+                        //                         // );
+                        //                       },
+                        //                     ),
+                        //                     Text(
+                        //                       AppLocalizations.of(
+                        //                         context,
+                        //                       )!
+                        //                           .tgGp,
+                        //                     ),
+                        //                   ],
+                        //                 ),
+                        //                 Column(
+                        //                   mainAxisSize: MainAxisSize.min,
+                        //                   children: [
+                        //                     IconButton(
+                        //                       icon: const Icon(
+                        //                         MdiIcons.telegram,
+                        //                       ),
+                        //                       iconSize: 40,
+                        //                       tooltip: AppLocalizations.of(
+                        //                         context,
+                        //                       )!
+                        //                           .tgCh,
+                        //                       onPressed: () {
+                        //                         // Navigator.pop(context);
+                        //                         // launchUrl(
+                        //                         //   Uri.parse(
+                        //                         //     'https://t.me/tune_360_official',
+                        //                         //   ),
+                        //                         //   mode: LaunchMode
+                        //                         //       .externalApplication,
+                        //                         // );
+                        //                       },
+                        //                     ),
+                        //                     Text(
+                        //                       AppLocalizations.of(
+                        //                         context,
+                        //                       )!
+                        //                           .tgCh,
+                        //                     ),
+                        //                   ],
+                        //                 ),
+                        //               ],
+                        //             ),
+                        //           ),
+                        //         );
+                        //       },
+                        //     );
+                        //   },
+                        //   dense: true,
+                        // ),
                         ListTile(
                           title: Text(
                             AppLocalizations.of(

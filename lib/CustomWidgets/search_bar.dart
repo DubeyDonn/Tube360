@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
-class SearchBar extends StatefulWidget {
+class SearchBar1 extends StatefulWidget {
   final bool isYt;
   final Widget body;
   final bool autofocus;
@@ -16,7 +16,7 @@ class SearchBar extends StatefulWidget {
   final Function(String)? onQueryChanged;
   final Function()? onQueryCleared;
   final Function(String) onSubmitted;
-  const SearchBar({
+  const SearchBar1({
     super.key,
     this.leading,
     this.hintText,
@@ -32,10 +32,10 @@ class SearchBar extends StatefulWidget {
   });
 
   @override
-  State<SearchBar> createState() => _SearchBarState();
+  State<SearchBar1> createState() => _SearchBar1State();
 }
 
-class _SearchBarState extends State<SearchBar> {
+class _SearchBar1State extends State<SearchBar1> {
   String tempQuery = '';
   String query = '';
   final ValueNotifier<bool> hide = ValueNotifier<bool>(true);

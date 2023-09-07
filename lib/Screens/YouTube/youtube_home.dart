@@ -10,6 +10,7 @@ import 'package:tune_360/Screens/YouTube/youtube_playlist.dart';
 import 'package:tune_360/Screens/YouTube/youtube_search.dart';
 import 'package:tune_360/Services/youtube_services.dart';
 
+
 bool status = false;
 List searchedList = Hive.box('cache').get('ytHome', defaultValue: []) as List;
 List headList = Hive.box('cache').get('ytHomeHead', defaultValue: []) as List;
@@ -95,7 +96,7 @@ class _YouTubeState extends State<YouTube>
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.transparent,
-      body: SearchBar(
+      body: SearchBar1(
         isYt: true,
         controller: _controller,
         liveSearch: true,

@@ -9,7 +9,6 @@ import 'package:tune_360/CustomWidgets/textinput_dialog.dart';
 import 'package:tune_360/Helpers/backup_restore.dart';
 import 'package:tune_360/Helpers/downloads_checker.dart';
 import 'package:tune_360/Helpers/supabase.dart';
-import 'package:tune_360/Screens/Exclusive/exclusive_screen.dart';
 import 'package:tune_360/Screens/Home/saavn.dart';
 import 'package:tune_360/Screens/Library/library.dart';
 import 'package:tune_360/Screens/LocalMusic/downed_songs.dart';
@@ -29,6 +28,8 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../Radio/radio_screen.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -382,7 +383,7 @@ class _HomePageState extends State<HomePage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Exclusive(),
+                              builder: (context) => RadioScreen(),
                             ),
                           );
                         },

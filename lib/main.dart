@@ -29,6 +29,15 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 
+class MyHttpOverrides extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext? context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
+  }
+}
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Paint.enableDithering = true;
@@ -46,6 +55,8 @@ Future<void> main() async {
     setOptimalDisplayMode();
   }
   await startService();
+  HttpOverrides.global = MyHttpOverrides();
+
   runApp(MyApp());
 }
 

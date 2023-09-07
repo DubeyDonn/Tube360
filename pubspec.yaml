@@ -52,6 +52,10 @@ dependencies:
   url_launcher: ^6.1.7
   uuid: ^3.0.7
   youtube_explode_dart: 1.10.7+1
+  get: ^4.6.5
+  flutter_radio_player: ^1.1.0
+
+
 
 dev_dependencies:
   flutter_test:
@@ -68,7 +72,7 @@ flutter:
   assets:
     # Add assets to the application.
     - assets/
-    - assets/exclusive/
+    - assets/radio/
 
 msix_config:
   display_name: Tune 360

@@ -25,7 +25,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:logging/logging.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:package_info_plus/package_info_plus.dart';
+// import 'package:package_info_plus/package_info_plus.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -124,130 +124,130 @@ class _HomePageState extends State<HomePage> {
         'Zone: ${now.timeZoneName}, Offset: $offset',
       );
 
-      PackageInfo.fromPlatform().then((PackageInfo packageInfo) {
-        appVersion = packageInfo.version;
-        updateUserDetails('version', packageInfo.version);
-
-        if (checkUpdate) {
-          db.getUpdate().then((Map value) async {
-            if (compareVersion(
-              value['LatestVersion'] as String,
-              appVersion!,
-            )) {
-              // List? abis =
-              // await Hive.box('settings').get('supportedAbis') as List?;
-
-              // if (abis == null) {
-              // final DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
-              // final AndroidDeviceInfo androidDeviceInfo =
-              //     await deviceInfo.androidInfo;
-              // abis = androidDeviceInfo.supportedAbis;
-              // await Hive.box('settings').put('supportedAbis', abis);
-              // }
-
-              ShowSnackBar().showSnackBar(
-                context,
-                AppLocalizations.of(context)!.updateAvailable,
-                duration: const Duration(seconds: 15),
-                action: SnackBarAction(
-                  textColor: Theme.of(context).colorScheme.secondary,
-                  label: AppLocalizations.of(context)!.update,
-                  onPressed: () {
-                    Navigator.pop(context);
-                    launchUrl(
-                      Uri.parse(value['LatestUrl'].toString()),
-                    );
-                    // if (abis!.contains('arm64-v8a')) {
-                    //   launchUrl(
-                    //     Uri.parse(value['arm64-v8a'] as String),
-                    //     mode: LaunchMode.externalApplication,
-                    //   );
-                    // } else {
-                    //   if (abis.contains('armeabi-v7a')) {
-                    //     launchUrl(
-                    //       Uri.parse(value['armeabi-v7a'] as String),
-                    //       mode: LaunchMode.externalApplication,
-                    //     );
-                    //   } else {
-                    //     launchUrl(
-                    //       Uri.parse(value['universal'] as String),
-                    //       mode: LaunchMode.externalApplication,
-                    //     );
-                    //   }
-                    // }
-                  },
-                ),
-              );
-            }
-          });
-        }
-        if (autoBackup) {
-          final List<String> checked = [
-            AppLocalizations.of(
-              context,
-            )!
-                .settings,
-            AppLocalizations.of(
-              context,
-            )!
-                .downs,
-            AppLocalizations.of(
-              context,
-            )!
-                .playlists,
-          ];
-          final List playlistNames = Hive.box('settings').get(
-            'playlistNames',
-            defaultValue: ['Favorite Songs'],
-          ) as List;
-          final Map<String, List> boxNames = {
-            AppLocalizations.of(
-              context,
-            )!
-                .settings: ['settings'],
-            AppLocalizations.of(
-              context,
-            )!
-                .cache: ['cache'],
-            AppLocalizations.of(
-              context,
-            )!
-                .downs: ['downloads'],
-            AppLocalizations.of(
-              context,
-            )!
-                .playlists: playlistNames,
-          };
-          final String autoBackPath = Hive.box('settings').get(
-            'autoBackPath',
-            defaultValue: '',
-          ) as String;
-          if (autoBackPath == '') {
-            ExtStorageProvider.getExtStorage(
-              dirName: 'Tune 360/Backups',
-            ).then((value) {
-              Hive.box('settings').put('autoBackPath', value);
-              createBackup(
-                context,
-                checked,
-                boxNames,
-                path: value,
-                fileName: 'Tune 360_AutoBackup',
-                showDialog: false,
-              );
-            });
-          } else {
-            createBackup(
-              context,
-              checked,
-              boxNames,
-              path: autoBackPath,
-              fileName: 'Tune 360_AutoBackup',
-              showDialog: false,
-            );
-          }
-        }
-      });
+      // PackageInfo.fromPlatform().then((PackageInfo packageInfo) {
+      //   appVersion = packageInfo.version;
+      //   updateUserDetails('version', packageInfo.version);
+      //
+      //   if (checkUpdate) {
+      //     db.getUpdate().then((Map value) async {
+      //       if (compareVersion(
+      //         value['LatestVersion'] as String,
+      //         appVersion!,
+      //       )) {
+      //         // List? abis =
+      //         // await Hive.box('settings').get('supportedAbis') as List?;
+      //
+      //         // if (abis == null) {
+      //         // final DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
+      //         // final AndroidDeviceInfo androidDeviceInfo =
+      //         //     await deviceInfo.androidInfo;
+      //         // abis = androidDeviceInfo.supportedAbis;
+      //         // await Hive.box('settings').put('supportedAbis', abis);
+      //         // }
+      //
+      //         ShowSnackBar().showSnackBar(
+      //           context,
+      //           AppLocalizations.of(context)!.updateAvailable,
+      //           duration: const Duration(seconds: 15),
+      //           action: SnackBarAction(
+      //             textColor: Theme.of(context).colorScheme.secondary,
+      //             label: AppLocalizations.of(context)!.update,
+      //             onPressed: () {
+      //               Navigator.pop(context);
+      //               launchUrl(
+      //                 Uri.parse(value['LatestUrl'].toString()),
+      //               );
+      //               // if (abis!.contains('arm64-v8a')) {
+      //               //   launchUrl(
+      //               //     Uri.parse(value['arm64-v8a'] as String),
+      //               //     mode: LaunchMode.externalApplication,
+      //               //   );
+      //               // } else {
+      //               //   if (abis.contains('armeabi-v7a')) {
+      //               //     launchUrl(
+      //               //       Uri.parse(value['armeabi-v7a'] as String),
+      //               //       mode: LaunchMode.externalApplication,
+      //               //     );
+      //               //   } else {
+      //               //     launchUrl(
+      //               //       Uri.parse(value['universal'] as String),
+      //               //       mode: LaunchMode.externalApplication,
+      //               //     );
+      //               //   }
+      //               // }
+      //             },
+      //           ),
+      //         );
+      //       }
+      //     });
+      //   }
+      //   if (autoBackup) {
+      //     final List<String> checked = [
+      //       AppLocalizations.of(
+      //         context,
+      //       )!
+      //           .settings,
+      //       AppLocalizations.of(
+      //         context,
+      //       )!
+      //           .downs,
+      //       AppLocalizations.of(
+      //         context,
+      //       )!
+      //           .playlists,
+      //     ];
+      //     final List playlistNames = Hive.box('settings').get(
+      //       'playlistNames',
+      //       defaultValue: ['Favorite Songs'],
+      //     ) as List;
+      //     final Map<String, List> boxNames = {
+      //       AppLocalizations.of(
+      //         context,
+      //       )!
+      //           .settings: ['settings'],
+      //       AppLocalizations.of(
+      //         context,
+      //       )!
+      //           .cache: ['cache'],
+      //       AppLocalizations.of(
+      //         context,
+      //       )!
+      //           .downs: ['downloads'],
+      //       AppLocalizations.of(
+      //         context,
+      //       )!
+      //           .playlists: playlistNames,
+      //     };
+      //     final String autoBackPath = Hive.box('settings').get(
+      //       'autoBackPath',
+      //       defaultValue: '',
+      //     ) as String;
+      //     if (autoBackPath == '') {
+      //       ExtStorageProvider.getExtStorage(
+      //         dirName: 'Tune 360/Backups',
+      //       ).then((value) {
+      //         Hive.box('settings').put('autoBackPath', value);
+      //         createBackup(
+      //           context,
+      //           checked,
+      //           boxNames,
+      //           path: value,
+      //           fileName: 'Tune 360_AutoBackup',
+      //           showDialog: false,
+      //         );
+      //       });
+      //     } else {
+      //       createBackup(
+      //         context,
+      //         checked,
+      //         boxNames,
+      //         path: autoBackPath,
+      //         fileName: 'Tune 360_AutoBackup',
+      //         showDialog: false,
+      //       );
+      //     }
+      //   }
+      // });
       if (Hive.box('settings').get('proxyIp') == null) {
         Hive.box('settings').put('proxyIp', '103.47.67.134');
       }

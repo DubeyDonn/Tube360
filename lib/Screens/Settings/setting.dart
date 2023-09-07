@@ -23,7 +23,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:package_info_plus/package_info_plus.dart';
+// import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -117,11 +117,11 @@ class _SettingPageState extends State<SettingPage> {
   }
 
   Future<void> main() async {
-    final PackageInfo packageInfo = await PackageInfo.fromPlatform();
-    appVersion = packageInfo.version;
-    setState(
-      () {},
-    );
+    // final PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    // appVersion = packageInfo.version;
+    // setState(
+    //   () {},
+    // );
   }
 
   bool compareVersion(String latestVersion, String currentVersion) {

@@ -108,7 +108,7 @@ class _AuthScreenState extends State<AuthScreen> {
                   Expanded(
                     child: Center(
                       child: SingleChildScrollView(
-                        padding: const EdgeInsets.only(left: 30.0, right: 30.0),
+                        padding: const EdgeInsets.only(left: 30.0, right: 30.0,top: 15),
                         physics: const BouncingScrollPhysics(),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -120,7 +120,7 @@ class _AuthScreenState extends State<AuthScreen> {
                                   'Tune 360',
                                   style: TextStyle(
                                     height: 0.10,
-                                    fontSize: 80,
+                                    fontSize: 50,
                                     fontWeight: FontWeight.bold,
                                     color:
                                         Theme.of(context).colorScheme.secondary,

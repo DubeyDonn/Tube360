@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_radio_player/flutter_radio_player.dart';
+import 'package:flutter_radio_player/models/frp_source_modal.dart';
 import 'package:get/get.dart';
 
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-
-
 
 class RadioController extends GetxController {
   static RadioController get to => Get.put(RadioController());
@@ -16,13 +15,11 @@ class RadioController extends GetxController {
   DateTime? currentBackPressedTime;
 
   FlutterRadioPlayer flutterRadioPlayer = FlutterRadioPlayer();
-  final playerState = FlutterRadioPlayer.flutter_radio_paused;
 
   int currentIndex = 0;
   double volume = 0.8;
 
-
-  var _data= "".obs;
+  var _data = "".obs;
 
   get data => _data.value;
 
@@ -63,11 +60,17 @@ class RadioController extends GetxController {
 
   Future<void> initRadioService() async {
     try {
-      await flutterRadioPlayer.init(
-        "Flutter Radio Example",
-        "Live",
-        "http://209.133.216.3:7018/;stream.mp3",
-        "false",
+      flutterRadioPlayer.initPlayer();
+
+      final FRPSource frpSource = FRPSource(
+        mediaSources: <MediaSources>[
+          MediaSources(
+              url: "http://209.133.216.3:7018/;stream.mp3", // dummy url
+              description: "Flutter Radio Example",
+              isPrimary: false,
+              title: "Flutter Radio Example",
+              isAac: true),
+        ],
       );
     } on PlatformException {
       print("Exception occurred while trying to register the services.");

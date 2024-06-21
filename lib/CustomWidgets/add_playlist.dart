@@ -1,5 +1,3 @@
-
-
 import 'package:audio_service/audio_service.dart';
 import 'package:tune_360/CustomWidgets/collage.dart';
 import 'package:tune_360/CustomWidgets/gradient_containers.dart';
